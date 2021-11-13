@@ -1,0 +1,14 @@
+<div class="product-wrapper">
+    <div class="title-text">
+        <p class="fs-4">{{productInfo.name}}</p>
+    </div>
+    <div class="img-wrapper">
+        <img [src]="productInfo.img_path" alt="laptop image">
+    </div>
+    <div class="pricing-section">
+        <span><strong>₹ {{productInfo.price}}</strong></span>
+    </div>
+    <div class="widget-wrapper">
+        <counter [initValue]="productInfo.quantity" (countChanged)="onCounterChanged($event)"></counter>
+    </div>
+</div>

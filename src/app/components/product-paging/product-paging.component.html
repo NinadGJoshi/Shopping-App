@@ -1,0 +1,48 @@
+<div class="container-fluid">
+    <div class="heading-section">
+        <div class="row">
+            <div class="col-11">
+                <h1>Choose Your Product</h1>
+            </div>
+            <div class="col-1">
+                <div class="cart-section-wrapper" *ngIf="(isCheckedOut$ | async)">
+                    <button class="cart-check-out-btn" type="button" (click)="onCartClick()">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                        </svg>
+                    </button>
+                    <span class="translate-middle badge rounded-pill bg-danger">
+                        {{(productList$ | async).size}}
+                        <span class="visually-hidden">unread messages</span>
+                      </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="paging-wrapper">
+        <div class="row">
+            <div class="col-1">
+                <div class="action-btn-wrapper">
+                    <button class="btn btn-primary" (click)="loadPrevProduct()" [disabled]="currentIndex === 0"><</button>
+                </div>
+            </div>
+            <div class="col-10">                
+                <div class="paging-content">
+                    <ng-container *ngFor="let item of displayList">
+                        <div class="product">
+                            <product [data]="item"></product>
+                        </div>
+                    </ng-container>
+                </div>
+            </div>
+            <div class="col-1">
+                <div class="action-btn-wrapper">
+                    <button class="btn btn-primary" (click)="loadNextProduct()" [disabled]="currentIndex + 5 === productList.length">></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="checkout-btn-wrapper">
+        <button checkoutBtnDir class="checkout-btn" (click)="onCheckout()">Checkout</button>
+    </div>
+</div>

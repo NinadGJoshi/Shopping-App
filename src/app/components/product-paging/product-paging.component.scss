@@ -1,0 +1,69 @@
+.heading-section{
+    text-align: center;
+    h1{
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+    .cart-section-wrapper{
+        display: inline;
+        float: right;
+
+        .cart-check-out-btn{
+            background: none;
+            padding: 0;
+            border: none;
+
+            svg {
+                fill: #343434;
+            }
+        }
+
+        .badge{
+            position: absolute;
+            top: 55px;
+            right: 0px;
+        }
+    }
+    padding: 50px 10px;
+}
+.paging-wrapper{
+    width: auto;
+    button{
+        text-align: center;
+        width: 44px;
+        height: 44px;
+        padding: 0;
+    }
+    
+    .paging-content{
+        // border: 1px dashed black;
+        .product{
+            display: inline-block;
+            width: 20%;
+        }
+    }
+    
+    .action-btn-wrapper{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.checkout-btn-wrapper{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+    height: 200px;
+
+    .checkout-btn{
+        width: 250px;
+        height: 100px;
+        background-color: #FFEA00;
+        border-radius: 5%;
+        font-size: 40px;
+        font-family: fantasy;
+    }
+}

@@ -1,0 +1,11 @@
+<div class="counter-wrapper">
+    <div class="row">
+        <div class="action-buttons">
+            <button class="btn btn-primary" (click)="decrementCount()" [disabled]="count === 0">-</button>
+        </div>
+        <span class="counter">{{count}}</span>
+        <div class="action-buttons">
+            <button class="btn btn-primary" (click)="incrementCount()">+</button>
+        </div>
+    </div>
+</div>

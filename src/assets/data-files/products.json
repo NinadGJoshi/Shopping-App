@@ -1,0 +1,67 @@
+{
+    "products": [
+        {
+            "id": 1001,
+            "name": "Acer",
+            "img_path": "../../../assets/images/lp1.png",
+            "price": 44999,
+            "quantity": 0
+        },
+        {
+            "id": 1002,
+            "name": "Macbook",
+            "img_path": "../../../assets/images/lp2.png",
+            "price": 129999,
+            "quantity": 0
+        },
+        {
+            "id": 1003,
+            "name": "Asus",
+            "img_path": "../../../assets/images/lp3.png",
+            "price": 69999,
+            "quantity": 0
+        },
+        {
+            "id": 1004,
+            "name": "Dell",
+            "img_path": "../../../assets/images/lp4.png",
+            "price": 79999,
+            "quantity": 0
+        },
+        {
+            "id": 1005,
+            "name": "Mi",
+            "img_path": "../../../assets/images/lp5.png",
+            "price": 39999,
+            "quantity": 0
+        },
+        {
+            "id": 1006,
+            "name": "HP",
+            "img_path": "../../../assets/images/lp6.png",
+            "price": 49999,
+            "quantity": 0
+        },
+        {
+            "id": 1007,
+            "name": "Lenovo",
+            "img_path": "../../../assets/images/lp7.png",
+            "price": 41999,
+            "quantity": 0
+        },
+        {
+            "id": 1008,
+            "name": "Reach",
+            "img_path": "../../../assets/images/lp8.png",
+            "price": 45999,
+            "quantity": 0
+        },
+        {
+            "id": 1005,
+            "name": "Micromax",
+            "img_path": "../../../assets/images/lp9.png",
+            "price": 67999,
+            "quantity": 0
+        }
+    ]
+}

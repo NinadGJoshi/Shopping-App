@@ -1,0 +1,15 @@
+.counter-wrapper{
+    display: block;
+    width: 100px;
+    .action-buttons{
+        display: inline;
+        width: 32px;
+        height: 32px;
+        padding: 0;
+    }
+    .counter{
+        text-align: center;
+        padding: 7px 0;
+        width: 48%;
+    }
+}
