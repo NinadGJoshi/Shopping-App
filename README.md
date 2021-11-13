@@ -25,3 +25,8 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+Implementations Screenshot:
+![checkout-cart](https://user-images.githubusercontent.com/46490850/141656302-432e85d8-baac-43b3-b046-3649c0f3840f.JPG)
+![pagination](https://user-images.githubusercontent.com/46490850/141656304-76579eb8-49bf-4c8f-b400-4b46f95de3e9.JPG)
+![billing](https://user-images.githubusercontent.com/46490850/141656305-32016e0f-c9cd-42d7-8bf2-84faed13df6b.JPG)
